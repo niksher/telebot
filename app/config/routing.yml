@@ -1,0 +1,12 @@
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+
+
+bot_number:
+    path:     /bot/number
+    defaults: { _controller: AppBundle:Bot:number }
+
+bot_api:
+    path:     /bot/{token}
+    defaults: { _controller: AppBundle:Bot:show }

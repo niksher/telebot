@@ -1,0 +1,68 @@
+array(0) {
+}
+array(0) {
+}
+array(31) {
+  ["USER"]=>
+  string(8) "www-data"
+  ["HOME"]=>
+  string(8) "/var/www"
+  ["FCGI_ROLE"]=>
+  string(9) "RESPONDER"
+  ["QUERY_STRING"]=>
+  string(0) ""
+  ["REQUEST_METHOD"]=>
+  string(3) "GET"
+  ["CONTENT_TYPE"]=>
+  string(0) ""
+  ["CONTENT_LENGTH"]=>
+  string(0) ""
+  ["SCRIPT_FILENAME"]=>
+  string(28) "/var/www/niksher/web/app.php"
+  ["SCRIPT_NAME"]=>
+  string(8) "/app.php"
+  ["REQUEST_URI"]=>
+  string(40) "/bot/AAFJChbThcoJ6dmLEm90Ca5oNsZTHvCQI6s"
+  ["DOCUMENT_URI"]=>
+  string(8) "/app.php"
+  ["DOCUMENT_ROOT"]=>
+  string(20) "/var/www/niksher/web"
+  ["SERVER_PROTOCOL"]=>
+  string(8) "HTTP/1.1"
+  ["GATEWAY_INTERFACE"]=>
+  string(7) "CGI/1.1"
+  ["SERVER_SOFTWARE"]=>
+  string(11) "nginx/1.4.6"
+  ["REMOTE_ADDR"]=>
+  string(11) "66.102.9.25"
+  ["REMOTE_PORT"]=>
+  string(5) "40479"
+  ["SERVER_ADDR"]=>
+  string(13) "81.176.239.96"
+  ["SERVER_PORT"]=>
+  string(3) "443"
+  ["SERVER_NAME"]=>
+  string(10) "niksher.ru"
+  ["HTTPS"]=>
+  string(2) "on"
+  ["REDIRECT_STATUS"]=>
+  string(3) "200"
+  ["HTTP_HOST"]=>
+  string(10) "niksher.ru"
+  ["HTTP_CONNECTION"]=>
+  string(10) "Keep-alive"
+  ["HTTP_ACCEPT"]=>
+  string(63) "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+  ["HTTP_USER_AGENT"]=>
+  string(119) "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.75 Safari/537.36 Google Favicon"
+  ["HTTP_ACCEPT_ENCODING"]=>
+  string(15) "gzip,deflate,br"
+  ["HTTP_X_FORWARDED_FOR"]=>
+  string(14) "109.194.204.33"
+  ["PHP_SELF"]=>
+  string(8) "/app.php"
+  ["REQUEST_TIME_FLOAT"]=>
+  float(1495437370.0329)
+  ["REQUEST_TIME"]=>
+  int(1495437370)
+}
