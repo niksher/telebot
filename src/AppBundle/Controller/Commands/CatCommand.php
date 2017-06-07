@@ -5,7 +5,7 @@ namespace Longman\TelegramBot\Commands\UserCommands;
 use Longman\TelegramBot\Commands\UserCommand;
 use Longman\TelegramBot\Request;
 
-class CatCammand extends UserCommand
+class CatCommand extends UserCommand
 {
     protected $name = 'cat';                      
     protected $description = 'A command for test'; 
