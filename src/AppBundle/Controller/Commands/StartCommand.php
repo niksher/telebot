@@ -2,10 +2,10 @@
 
 namespace Longman\TelegramBot\Commands\UserCommands;
 
-use Longman\TelegramBot\Commands\UserCommand;
+use Longman\TelegramBot\Commands\SystemCommand;
 use Longman\TelegramBot\Request;
 
-class StartCommand extends UserCommand
+class StartCommand extends SystemCommand
 {
     protected $name = 'start';                      
     protected $description = 'A command for test'; 
