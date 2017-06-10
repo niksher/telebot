@@ -23,7 +23,7 @@ class CatCommand extends UserCommand
         var_dump($this);
         $out = ob_get_contents();
         ob_end_clean();
-        file_put_contents("log.log", $out);
+        file_put_contents("log.log", $out, FILE_APPEND);
         
         $data = [];                               
         $data['chat_id'] = $chat_id;              
