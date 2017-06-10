@@ -18,7 +18,13 @@ class CatCommand extends UserCommand
 
         $chat_id = $message->getChat()->getId();  
         
-
+        ob_start();
+        var_dump($message);
+        var_dump($this);
+        $out = ob_get_contents();
+        ob_end_clean();
+        file_put_contents("log.log", $out);
+        
         $data = [];                               
         $data['chat_id'] = $chat_id;              
 
