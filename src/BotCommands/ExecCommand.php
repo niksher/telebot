@@ -31,7 +31,7 @@ class ExecCommand extends SystemCommand
 
         $data = [];                               
         $data['chat_id'] = $chat_id;
-        $data['text'] = "соси писос";
+        $data['text'] = "";
         $data['reply_markup'] = $inline_keyboard;
 
         return Request::sendMessage($data); 
