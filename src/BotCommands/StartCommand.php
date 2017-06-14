@@ -20,8 +20,8 @@ class StartCommand extends SystemCommand
         $chat_id = $message->getChat()->getId();  
         
         $inline_keyboard = new Keyboard([
-            ['text' => 'Кот картинкой', 'callback_data' => '/cat'],
-            ['text' => 'Видео кот', 'callback_data' => '/catgif'],
+            ['text' => '/cat', 'callback_data' => '/cat'],
+            ['text' => '/catgif', 'callback_data' => '/catgif'],
         ]);
         
 
