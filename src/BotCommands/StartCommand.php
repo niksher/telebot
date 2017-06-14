@@ -20,9 +20,11 @@ class StartCommand extends SystemCommand
         $chat_id = $message->getChat()->getId();  
         
         $inline_keyboard = new Keyboard([
-            ['text' => '/cat', 'callback_data' => '/cat'],
-            ['text' => '/catgif', 'callback_data' => '/catgif'],
-        ])->setResizeKeyboard(true);
+            ['text' => '/cat'],
+            ['text' => '/catgif'],
+        ]);
+
+        $inline_keyboard->setResizeKeyboard(true);
         
 
         $data = [];                               
