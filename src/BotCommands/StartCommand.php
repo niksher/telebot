@@ -22,7 +22,7 @@ class StartCommand extends SystemCommand
         $inline_keyboard = new Keyboard([
             ['text' => '/cat', 'callback_data' => '/cat'],
             ['text' => '/catgif', 'callback_data' => '/catgif'],
-        ]);
+        ])->setResizeKeyboard(true);
         
 
         $data = [];                               
