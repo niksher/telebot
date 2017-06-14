@@ -18,10 +18,16 @@ class StartCommand extends SystemCommand
 
         $chat_id = $message->getChat()->getId();  
         
+        $inline_keyboard = new InlineKeyboard([
+            ['text' => 'Кот картинкой', 'callback_data' => 'cat'],
+            ['text' => 'Видео кот', 'callback_data' => 'catgif'],
+        ]);
+        
 
         $data = [];                               
         $data['chat_id'] = $chat_id; 
         $data['text'] = "Это бот с котами, чтобы получить своего кота набери /cat, чтобы получить гифку кота набери /catgif";
+        $data['reply_markup'] = $inline_keyboard;
 
         return Request::sendMessage($data); 
     }
