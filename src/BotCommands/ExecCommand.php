@@ -24,12 +24,14 @@ class ExecCommand extends SystemCommand
             ['text' => '/catgif'],
         ]);
 
-        $inline_keyboard->setResizeKeyboard(true);
-        $inline_keyboard->setSelective(false);
+        $inline_keyboard->setResizeKeyboard(true)
+            ->setOneTimeKeyboard(true)
+            ->setSelective(false);
         
 
         $data = [];                               
         $data['chat_id'] = $chat_id;
+        $data['text'] = "соси писос";
         $data['reply_markup'] = $inline_keyboard;
 
         return Request::sendMessage($data); 
