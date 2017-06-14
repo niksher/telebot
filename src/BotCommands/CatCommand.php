@@ -9,7 +9,7 @@ class CatCommand extends UserCommand
 {
     protected $name = 'cat';                      
     protected $description = 'A command for test'; 
-    protected $usage = '/cat';                    
+    protected $usage = 'Кот картинкой';                    
     protected $version = '1.0.0';                  
 
     public function execute()

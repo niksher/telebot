@@ -9,7 +9,7 @@ class CatgifCommand extends UserCommand
 {
     protected $name = 'catgif';                      
     protected $description = 'A command for test'; 
-    protected $usage = '/catgif';                    
+    protected $usage = 'Видео кот';                    
     protected $version = '1.0.0';                  
 
     public function execute()
