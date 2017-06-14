@@ -25,6 +25,7 @@ class StartCommand extends SystemCommand
         ]);
 
         $inline_keyboard->setResizeKeyboard(true);
+        $inline_keyboard->setSelective(true);
         
 
         $data = [];                               
