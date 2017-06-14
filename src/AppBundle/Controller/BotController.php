@@ -1,6 +1,7 @@
 <?php
 // src/AppBundle/Controller/LuckyController.php
 namespace AppBundle\Controller;
+
 use Longman\TelegramBot\Exception\TelegramException;
 use Longman\TelegramBot\Telegram;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
@@ -16,7 +17,6 @@ class BotController extends Controller
         $API_KEY = $this->getParameter("telebot_token");
         $BOT_NAME = $this->getParameter("telebot_name");
         $COMMANDS_FOLDER = __DIR__.'/../../BotCommands/';
-      
         try {
             $telegram = new Telegram($API_KEY, $BOT_NAME);
             $telegram->addCommandsPath($COMMANDS_FOLDER);

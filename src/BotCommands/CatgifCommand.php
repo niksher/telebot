@@ -28,19 +28,23 @@ class CatgifCommand extends UserCommand
     private function getCat( )
     {
       $imageList = [
-          "https://vk.com/doc5057566_446209025?hash=a1a7cf73ae173719c5&dl=992b29619ba92211c2&wnd=1&module=public&mp4=1"
-          , "https://vk.com/doc5057566_446294637?hash=8b2849bf98fdcc29ce&dl=0ec44b135a18e7dd7c&wnd=1&module=public&mp4=1"
-          , "https://vk.com/doc5057566_446294523?hash=3ecd9adf3e7b355bd3&dl=5f33e3559f8afda179&wnd=1&module=public&mp4=1"
-          , "https://vk.com/doc5057566_446294412?hash=3d7d14790306804455&dl=2ed38f798a7b165a41&wnd=1&module=public&mp4=1"
-          , "https://vk.com/doc5057566_446293931?hash=317b018753671caf1a&dl=28733f6b3b81c99d0a&wnd=1&module=public&mp4=1"
-          , "https://vk.com/doc5057566_446293803?hash=b63ed6ee435a6615ba&dl=c3ccb5e5df05f6424c&wnd=1&module=public&mp4=1"
-          , "https://vk.com/doc5057566_446293469?hash=9c5ed65e888bc811a1&dl=09bd416984762a7987&wnd=1&module=public&mp4=1"
-          , "https://vk.com/doc5057566_446251403?hash=6971366412d0e695bb&dl=d5119283147210bf94&wnd=1&module=public&mp4=1"
-          , "https://vk.com/doc5057566_446209547?hash=5d96eb498cc8eefe91&dl=fc1a2595cf8a53bff3&wnd=1&module=public&mp4=1"
-          , "https://vk.com/doc5057566_446209526?hash=be608168b45aab9cc7&dl=bfa29a6f8d409154da&wnd=1&module=public&mp4=1"
-          , "https://vk.com/doc5057566_446209505?hash=152fa1f8b0aca12707&dl=88ea06c04ac1899a5f&wnd=1&module=public&mp4=1"
-          , "https://vk.com/doc5057566_446209495?hash=d1dd172410c010ec9e&dl=cb0ce52efb70167e89&wnd=1&module=public&mp4=1"
-          , "https://vk.com/doc5057566_446209432?hash=b5d8430953550367d2&dl=1cf534ef63fb1f0d82&wnd=1&module=public&mp4=1"
+          "https://vk.com/doc5057566_446564261?hash=db18f8fe251de068ec&dl=1cced1d77cf0bd8831&wnd=1&module=public&mp4=1"
+          , "https://vk.com/doc5057566_446531756?hash=0e92bbe157d22763c5&dl=4535ddc7815a8e6274&wnd=1&module=public&mp4=1"
+          , "https://vk.com/doc5057566_446531595?hash=065cc4006f1efd32c3&dl=e8949019d58f5e31f9&wnd=1&module=public&mp4=1"
+          , "https://vk.com/doc5057566_446531270?hash=35c09ec81e8ddc6d59&dl=876d5782517d01d6f4&wnd=1&module=public&mp4=1"
+          , "https://vk.com/doc5057566_446531196?hash=0f1a08cc96a30c67ea&dl=b25bb8b4d9b1bc7b03&wnd=1&module=public&mp4=1"
+          , "https://vk.com/doc2000011423_446752360?hash=b617442d0c53992262&dl=430e353502ccf291b8&wnd=1&module=public&mp4=1"
+          , "https://vk.com/doc2000014281_446359557?hash=4b7a6b475f2a34b526&dl=210cf2186b5eee27bd&wnd=1&module=public&mp4=1"
+          , "https://vk.com/doc5057566_446530377?hash=7611462bc6982b65a4&dl=fb05ab5276e6be97f0&wnd=1&module=public&mp4=1"
+          , "https://vk.com/doc5057566_446530835?hash=2554a0149f67e57656&dl=0e79b4e6bbf9a20d35&wnd=1&module=public&mp4=1"
+          , "https://vk.com/doc5057566_446530580?hash=c7100aedad4f7e709d&dl=23036655f2997ecca1&wnd=1&module=public&mp4=1"
+          , "https://vk.com/doc5057566_446530497?hash=1f25de1a35752d6de1&dl=91eb3038e8b29432dd&wnd=1&module=public&mp4=1"
+          , "https://vk.com/doc5057566_446530302?hash=0b01dcb1d18670c29f&dl=532562289667386951&wnd=1&module=public&mp4=1"
+          , "https://vk.com/doc5057566_446530111?hash=41fcc688b6a2297ef0&dl=e93f10ede680b63299&wnd=1&module=public&mp4=1"
+          , "https://vk.com/doc5057566_446529935?hash=1d99f210f663fbfbe4&dl=a57125d6ef8a089e87&wnd=1&module=public&mp4=1"
+          , "https://vk.com/doc5057566_446529353?hash=9c95deb1f791c0afcc&dl=7f69259e47e654d0c0&wnd=1&module=public&mp4=1"
+          , "https://vk.com/doc5057566_446529309?hash=b0b0161e9fd6d18a42&dl=2baf3c6cafa9155269&wnd=1&module=public&mp4=1"
+          , "https://vk.com/doc5057566_446502056?hash=81637b8096ae4625c5&dl=cb18ee2b4bd7b86cf8&wnd=1&module=public&mp4=1"
       ];
       return $imageList[mt_rand(0, count($imageList))];
     }
