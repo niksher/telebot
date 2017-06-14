@@ -6,11 +6,11 @@ use Longman\TelegramBot\Commands\SystemCommand;
 use Longman\TelegramBot\Entities\Keyboard;
 use Longman\TelegramBot\Request;
 
-class StartCommand extends SystemCommand
+class ExecCommand extends SystemCommand
 {
-    protected $name = 'start';                      
+    protected $name = 'exec';                      
     protected $description = 'A command for test'; 
-    protected $usage = '/start';                    
+    protected $usage = '/exec';                    
     protected $version = '1.0.0';                  
 
     public function execute()
@@ -18,10 +18,19 @@ class StartCommand extends SystemCommand
         $message = $this->getMessage();           
 
         $chat_id = $message->getChat()->getId();  
+        
+        $inline_keyboard = new Keyboard([
+            ['text' => '/cat'],
+            ['text' => '/catgif'],
+        ]);
+
+        $inline_keyboard->setResizeKeyboard(true);
+        $inline_keyboard->setSelective(false);
+        
 
         $data = [];                               
-        $data['chat_id'] = $chat_id; 
-        $data['text'] = "Это бот с котами, чтобы получить своего кота набери /cat, чтобы получить гифку кота набери /catgif";
+        $data['chat_id'] = $chat_id;
+        $data['reply_markup'] = $inline_keyboard;
 
         return Request::sendMessage($data); 
     }
